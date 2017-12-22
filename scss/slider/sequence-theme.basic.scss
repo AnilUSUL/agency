@@ -33,10 +33,17 @@ html,
 /* Google Web Font */
 @import url(http://fonts.googleapis.com/css?family=Roboto:900);
 
-// Colors for each step
+//assetpath
+$assets_path: "http://localhost:3000/";
+
+// Colors for each step (default setting)
 $color1: #279FE5;
 $color2: #F96852;
 $color3: #2BBF8E;
+// imgs instead colors
+$img1: "img/slider/digitalTransformations2.jpg";
+$img2: "img/slider/markettingRelations.jpg";
+$img3: "img/slider/future.jpg";
 
 $sequenceMobileHeight: 420px;
 $sequenceDesktopHeight: 585px;
@@ -187,8 +194,9 @@ $sequenceDesktopHeight: 585px;
   }
 
   .seq-step1 {
-    background-color: $color1;
-
+    // background-color: $color1;
+    background: url("#{$assets_path}#{$img1}") 0 0 no-repeat;
+    background-size:100% 100%;
     .seq-button:focus,
     .seq-button:hover {
       color: $color1;
@@ -196,17 +204,18 @@ $sequenceDesktopHeight: 585px;
   }
 
   .seq-step2 {
-    background-color: $color2;
-
-    .seq-button:focus,
+    // background-color: $color2;
+    background: url("#{$assets_path}#{$img2}") 0 0 no-repeat;
+    background-size:100% 100%;    .seq-button:focus,
     .seq-button:hover {
       color: $color2;
     }
   }
 
   .seq-step3 {
-    background-color: $color3;
-
+    // background-color: $color3;
+    background: url("#{$assets_path}#{$img3}") 0 0 no-repeat;
+    background-size:100% 100%;
     .seq-button:focus,
     .seq-button:hover {
       color: $color3;
