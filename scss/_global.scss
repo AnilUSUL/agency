@@ -30,7 +30,10 @@ h6 {
 
 section {
   padding: 100px 0;
+  background-color:#222;
   h2.section-heading {
+    -webkit-text-stroke-color: #e7be33;
+    -webkit-text-stroke-width: 1px;
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;

@@ -28,8 +28,11 @@ h6 {
   text-transform: uppercase; }
 
 section {
-  padding: 100px 0; }
+  padding: 100px 0;
+  background-color: #222; }
   section h2.section-heading {
+    -webkit-text-stroke-color: #e7be33;
+    -webkit-text-stroke-width: 1px;
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px; }
@@ -63,7 +66,8 @@ body {
   -webkit-tap-highlight-color: #fed136; }
 
 #mainNav {
-  background-color: #222222; }
+  background-color: #222222;
+  border-bottom: solid #f8cc35 1px; }
   #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -96,9 +100,7 @@ body {
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    border: none;
-    background-color: transparent; }
+    transition: padding-top 0.3s, padding-bottom 0.3s; }
     #mainNav .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
@@ -161,6 +163,8 @@ header.masthead {
       text-transform: uppercase; } }
 
 .service-heading {
+  -webkit-text-stroke-color: #e7be33;
+  -webkit-text-stroke-width: 1px;
   margin: 15px 0;
   text-transform: none; }
 
@@ -294,13 +298,14 @@ header.masthead {
   list-style: none; }
   .timeline:before {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 30px;
+    bottom: 30px;
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
     content: '';
-    background-color: #f1f1f1; }
+    background-color: #5959ff;
+    box-shadow: 3px 0px 54px 27px #5959ff; }
   .timeline > li {
     position: relative;
     min-height: 50px;
@@ -338,6 +343,8 @@ header.masthead {
       border: 7px solid #f1f1f1;
       border-radius: 100%;
       background-color: #fed136; }
+      .timeline > li .timeline-image.timeline-last-image {
+        box-shadow: 2px 0 79px 46px #5959ff; }
       .timeline > li .timeline-image h4 {
         font-size: 10px;
         line-height: 14px;
@@ -360,7 +367,9 @@ header.masthead {
       margin-bottom: 0; }
   .timeline .timeline-heading h4 {
     margin-top: 0;
-    color: inherit; }
+    color: inherit;
+    -webkit-text-stroke-color: #ffc107;
+    -webkit-text-stroke-width: 0.9px; }
     .timeline .timeline-heading h4.subheading {
       text-transform: none; }
   .timeline .timeline-body > ul,
@@ -430,6 +439,9 @@ header.masthead {
     height: 225px;
     border: 7px solid white; }
   .team-member h4 {
+    -webkit-text-fill-color: #4646b6;
+    -webkit-text-stroke-color: #e7be33;
+    -webkit-text-stroke-width: 1.3px;
     margin-top: 25px;
     margin-bottom: 0;
     text-transform: none; }
@@ -513,7 +525,18 @@ ul.social-buttons {
     outline: none;
     background-color: #222222; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-      background-color: #fed136; }
+      background-color: #fed136;
+      box-shadow: 0px 0px 8px 2px #ffc107; }
+      ul.social-buttons li a:active.twitter, ul.social-buttons li a:focus.twitter, ul.social-buttons li a:hover.twitter {
+        background-color: #00aced; }
+      ul.social-buttons li a:active.facebook, ul.social-buttons li a:focus.facebook, ul.social-buttons li a:hover.facebook {
+        background-color: #3b5998; }
+      ul.social-buttons li a:active.linkedIn, ul.social-buttons li a:focus.linkedIn, ul.social-buttons li a:hover.linkedIn {
+        background-color: #0077b5; }
+  ul.social-buttons li.list-inline-item.social-button-seperator {
+    height: 18px;
+    width: 2px;
+    background-color: #fed132; }
 
 .text-primary {
   color: #fed136 !important; }
@@ -600,6 +623,19 @@ ul.social-buttons {
   .btn-xl .badge {
     color: #fed136;
     background-color: white; }
+
+.bg-light {
+  background-color: #222 !important;
+  border-bottom: solid #fed136 1px;
+  border-top: solid #fed136 1px; }
+
+.rounded-circle {
+  box-shadow: 1px -1px 20px 13px #5959FF; }
+  .rounded-circle.team-member {
+    box-shadow: 1px 46px 147px 32px #5959ff; }
+
+.list-inline-item:not(:last-child) {
+  margin: 0px; }
 
 /**
  * Theme Name: Basic

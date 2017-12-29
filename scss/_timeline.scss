@@ -5,13 +5,14 @@
   list-style: none;
   &:before {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 30px;
+    bottom: 30px;
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
     content: '';
-    background-color: #f1f1f1;
+    background-color: #5959ff;
+    box-shadow: 3px 0px 54px 27px #5959ff;
   }
   > li {
     position: relative;
@@ -56,6 +57,9 @@
       border: 7px solid #f1f1f1;
       border-radius: 100%;
       background-color: $theme-primary;
+      &.timeline-last-image{
+        box-shadow: 2px 0 79px 46px #5959ff;
+      }
       h4 {
         font-size: 10px;
         line-height: 14px;
@@ -87,6 +91,8 @@
     h4 {
       margin-top: 0;
       color: inherit;
+      -webkit-text-stroke-color: #ffc107;
+      -webkit-text-stroke-width: 0.9px;
       &.subheading {
         text-transform: none;
       }

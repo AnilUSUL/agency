@@ -17,3 +17,22 @@
   @include button-variant(white, $theme-primary, $theme-primary);
   @include heading-font;
 }
+//added by ANil
+.bg-light {
+      background-color: #222!important;
+      border-bottom: solid #fed136 1px;
+      border-top: solid #fed136 1px;
+}
+.rounded-circle {
+
+    box-shadow: 1px -1px 20px 13px #5959FF;
+    //box-shadow: 1px -1px 20px 13px rgb(243, 30, 0);
+
+    &.team-member{
+      box-shadow: 1px 46px 147px 32px #5959ff;
+    }
+
+}
+.list-inline-item:not(:last-child){
+  margin: 0px;
+}
